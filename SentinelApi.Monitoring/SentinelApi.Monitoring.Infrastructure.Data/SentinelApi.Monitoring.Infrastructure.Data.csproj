@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <ProjectReference Include="..\SentinelApi.Monitoring.Application\SentinelApi.Monitoring.Application.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/docs/">
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/lib/" />
+  <Folder Name="/solution items/">
+    <File Path="../.editorconfig" />
+    <File Path="../.gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="SentinelApi.Monitoring.Application/SentinelApi.Monitoring.Application.csproj" Id="dd51a925-28ce-4673-b974-193a08e1609d" />
+    <Project Path="SentinelApi.Monitoring.Domain/SentinelApi.Monitoring.Domain.csproj" Id="5e1c5d0b-03d9-4c8e-9dfe-9597de25839d" />
+    <Project Path="SentinelApi.Monitoring.Infrastructure.Data/SentinelApi.Monitoring.Infrastructure.Data.csproj" Id="2e79a0ff-dbcd-4853-8118-614846c1486f" />
+    <Project Path="SentinelApi.Monitoring.Infrastructure/SentinelApi.Monitoring.Infrastructure.csproj" Id="a853cdca-108e-4a47-bdb4-f5b039d76bb5" />
+    <Project Path="SentinelApi.Monitoring/SentinelApi.Monitoring.csproj" />
+  </Folder>
+  <Folder Name="/test/" />
+</Solution>

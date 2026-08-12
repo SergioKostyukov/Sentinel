@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <InvariantGlobalization>false</InvariantGlobalization>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Controllers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SentinelApi.Monitoring.Application\SentinelApi.Monitoring.Application.csproj" />
+        <ProjectReference Include="..\SentinelApi.Monitoring.Infrastructure\SentinelApi.Monitoring.Infrastructure.csproj" />
+        <ProjectReference Include="..\SentinelApi.Monitoring.Infrastructure.Data\SentinelApi.Monitoring.Infrastructure.Data.csproj" />
+    </ItemGroup>
+
+</Project>
