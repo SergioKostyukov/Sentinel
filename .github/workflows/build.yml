@@ -24,3 +24,6 @@ jobs:
 
       - name: Build
         run: dotnet build SentinelApi.Monitoring/SentinelApi.Monitoring.slnx --no-restore --configuration Release
+
+      - name: Docker build
+        run: docker compose build
