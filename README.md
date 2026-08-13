@@ -1,5 +1,7 @@
 # Sentinel System
 
+[![Build](https://github.com/SergioKostyukov/Sentinel/actions/workflows/build.yml/badge.svg)](https://github.com/SergioKostyukov/Sentinel/actions/workflows/build.yml)
+
 Система для централізованого моніторингу статусу сервісів та збору логів.
 
 ## 📚 Documentation
