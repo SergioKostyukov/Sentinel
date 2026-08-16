@@ -1,6 +1,12 @@
 # Sentinel System
 
 [![Build](https://github.com/SergioKostyukov/Sentinel/actions/workflows/build.yml/badge.svg)](https://github.com/SergioKostyukov/Sentinel/actions/workflows/build.yml)
+[![License: MIT](https://img.shields.io/github/license/SergioKostyukov/Sentinel)](LICENSE)
+[![.NET](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](docker-compose.yml)
+[![Top language](https://img.shields.io/github/languages/top/SergioKostyukov/Sentinel)](https://github.com/SergioKostyukov/Sentinel)
+[![Repo size](https://img.shields.io/github/repo-size/SergioKostyukov/Sentinel)](https://github.com/SergioKostyukov/Sentinel)
+[![Last commit](https://img.shields.io/github/last-commit/SergioKostyukov/Sentinel)](https://github.com/SergioKostyukov/Sentinel/commits/main)
 
 Система для централізованого моніторингу статусу сервісів та збору логів.
 

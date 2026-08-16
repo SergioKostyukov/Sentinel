@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" />
+        <PackageReference Include="FluentValidation.AspNetCore" />
+        <PackageReference Include="Swashbuckle.AspNetCore" />
+        <PackageReference Include="NLog.Web.AspNetCore" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="nlog.config" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SentinelApi.Identity.Domain\SentinelApi.Identity.Domain.csproj" />
+        <ProjectReference Include="..\SentinelApi.Identity.Application\SentinelApi.Identity.Application.csproj" />
+        <ProjectReference Include="..\SentinelApi.Identity.Infrastructure\SentinelApi.Identity.Infrastructure.csproj" />
+        <ProjectReference Include="..\SentinelApi.Identity.Infrastructure.Data\SentinelApi.Identity.Infrastructure.Data.csproj" />
+        <ProjectReference Include="..\..\SentinelLib.Identity.Security\SentinelLib.Identity.Security\SentinelLib.Identity.Security.csproj" />
+    </ItemGroup>
+
+</Project>

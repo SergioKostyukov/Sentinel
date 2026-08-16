@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
 
     steps:
       - name: Checkout
@@ -19,11 +19,20 @@ jobs:
         with:
           dotnet-version: "10.0.x"
 
-      - name: Restore
+      - name: Restore Monitoring
         run: dotnet restore SentinelApi.Monitoring/SentinelApi.Monitoring.slnx
 
-      - name: Build
+      - name: Build Monitoring
         run: dotnet build SentinelApi.Monitoring/SentinelApi.Monitoring.slnx --no-restore --configuration Release
+
+      - name: Restore Identity
+        run: dotnet restore SentinelApi.Identity/SentinelApi.Identity.slnx
+
+      - name: Build Identity
+        run: dotnet build SentinelApi.Identity/SentinelApi.Identity.slnx --no-restore --configuration Release
+
+      - name: Test Identity
+        run: dotnet test SentinelApi.Identity/SentinelApi.Identity.slnx --no-restore --configuration Release
 
       - name: Docker build
         run: docker compose build

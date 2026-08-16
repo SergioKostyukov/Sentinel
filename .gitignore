@@ -37,11 +37,9 @@ Thumbs.db
 
 # Secrets
 appsettings.Development.json
-appsettings.json
-secrets.json
-**/secrets.json
 .env
 .env.*
+!.env.example
 
 # ReSharper
 _ReSharper*/

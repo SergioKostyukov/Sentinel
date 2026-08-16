@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="SentinelLib.Identity.Security/SentinelLib.Identity.Security.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="SentinelLib.Identity.Security.Tests/SentinelLib.Identity.Security.Tests.csproj" />
+  </Folder>
+</Solution>

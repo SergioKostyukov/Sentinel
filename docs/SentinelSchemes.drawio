@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8" pages="2">
   <diagram id="w9ak6NNSIgUsAJFBEGAI" name="Architecture">
-    <mxGraphModel dx="2326" dy="736" grid="1" gridSize="10" guides="0" tooltips="0" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#494949" math="0" shadow="0">
+    <mxGraphModel dx="2142" dy="626" grid="1" gridSize="10" guides="0" tooltips="0" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#494949" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,7 +14,7 @@
           <mxGeometry x="-1040" y="280" width="200" height="480" as="geometry" />
         </mxCell>
         <mxCell id="4" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-1040" y="40" width="320" height="210" as="geometry" />
+          <mxGeometry x="-1040" y="40" width="270" height="210" as="geometry" />
         </mxCell>
         <mxCell id="5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
           <mxGeometry x="-1020" y="60" width="70" height="20" as="geometry" />
@@ -34,7 +34,7 @@
         <mxCell id="10" value="Основний UI проєкт" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-934" y="55" width="204" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="11" value="Сервіс готовий та опублікований" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fillColor=none;" parent="1" vertex="1">
+        <mxCell id="11" value="Сервіс готовий" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-934" y="85" width="204" height="30" as="geometry" />
         </mxCell>
         <mxCell id="12" value="Сервіс у розробці" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fillColor=none;" parent="1" vertex="1">
@@ -63,7 +63,7 @@
         <mxCell id="57" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="1" source="17" target="47" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="17" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Api.Identity&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;dashed=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;fontSize=14;" parent="1" vertex="1">
+        <mxCell id="17" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Api.Identity&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;dashed=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="-760" y="360" width="240" height="80" as="geometry" />
         </mxCell>
         <mxCell id="47" value="&lt;font&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;S&lt;/span&gt;&lt;b&gt;entinelApi.Identity&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=14;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;rounded=1;" parent="1" vertex="1">
@@ -83,7 +83,7 @@
         <mxCell id="48" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Api.Monitoring&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;dashed=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="-760" y="520" width="240" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="50" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;&quot;&gt;Lib.Identity.Security&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;dashed=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;fontSize=14;" parent="1" vertex="1">
+        <mxCell id="50" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;&quot;&gt;Lib.Identity.Security&lt;/font&gt;&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;dashed=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="-760" y="280" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="58" value="&lt;font&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;S&lt;/span&gt;&lt;b&gt;entinelApi.Monitoring&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=14;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;rounded=1;" parent="1" vertex="1">

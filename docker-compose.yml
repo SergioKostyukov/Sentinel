@@ -1,9 +1,44 @@
 services:
   monitoring:
+    container_name: sentinel-monitoring
     build:
-      context: ./SentinelApi.Monitoring
-      dockerfile: SentinelApi.Monitoring/Dockerfile
+      context: .
+      dockerfile: SentinelApi.Monitoring/SentinelApi.Monitoring/Dockerfile
     ports:
       - "8080:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - Jwt__Issuer=${JWT_ISSUER}
+      - Jwt__Audience=${JWT_AUDIENCE}
+
+  identity:
+    container_name: sentinel-identity
+    build:
+      context: .
+      dockerfile: SentinelApi.Identity/SentinelApi.Identity/Dockerfile
+    ports:
+      - "8081:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__Identity=Server=sql-server;Database=SentinelIdentity;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True
+      - Jwt__Issuer=${JWT_ISSUER}
+      - Jwt__Audience=${JWT_AUDIENCE}
+      - Jwt__PrivateKey=${JWT_PRIVATE_KEY}
+      - Seed__AdminLogin=${SEED_ADMIN_LOGIN}
+      - Seed__AdminEmail=${SEED_ADMIN_EMAIL}
+      - Seed__AdminPassword=${SEED_ADMIN_PASSWORD}
+    depends_on:
+      - sql-server
+
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
+    ports:
+      - "14330:1433"
+    volumes:
+      - sql-server-data:/var/opt/mssql
+
+volumes:
+  sql-server-data:

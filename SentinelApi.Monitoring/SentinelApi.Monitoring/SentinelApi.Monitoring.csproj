@@ -22,6 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\SentinelLib.Identity.Security\SentinelLib.Identity.Security\SentinelLib.Identity.Security.csproj" />
         <ProjectReference Include="..\SentinelApi.Monitoring.Application\SentinelApi.Monitoring.Application.csproj" />
         <ProjectReference Include="..\SentinelApi.Monitoring.Infrastructure\SentinelApi.Monitoring.Infrastructure.csproj" />
         <ProjectReference Include="..\SentinelApi.Monitoring.Infrastructure.Data\SentinelApi.Monitoring.Infrastructure.Data.csproj" />

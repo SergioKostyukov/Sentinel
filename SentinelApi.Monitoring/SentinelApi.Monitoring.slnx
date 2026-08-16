@@ -2,7 +2,9 @@
   <Folder Name="/docs/">
     <File Path="README.md" />
   </Folder>
-  <Folder Name="/lib/" />
+  <Folder Name="/lib/">
+    <Project Path="../SentinelLib.Identity.Security/SentinelLib.Identity.Security/SentinelLib.Identity.Security.csproj" />
+  </Folder>
   <Folder Name="/solution items/">
     <File Path="../.editorconfig" />
     <File Path="../.github/workflows/build.yml" />

@@ -1,6 +1,9 @@
 using SentinelApi.Monitoring.Extensions;
+using SentinelLib.Identity.Security.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSentinelAuthentication(builder.Configuration, requireHttpsMetadata: !builder.Environment.IsDevelopment());
 
 builder.Services.AddSwaggerWithAuthorizationAndDocumentation();
 
@@ -16,6 +19,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
