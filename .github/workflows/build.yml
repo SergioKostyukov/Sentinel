@@ -7,9 +7,9 @@ on:
     branches: [main]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest    
-
+  identity-security:
+    name: SentinelLib.Identity.Security
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -19,20 +19,82 @@ jobs:
         with:
           dotnet-version: "10.0.x"
 
-      - name: Restore Monitoring
-        run: dotnet restore SentinelApi.Monitoring/SentinelApi.Monitoring.slnx
+      - name: Restore
+        run: dotnet restore SentinelLib.Identity.Security/SentinelLib.Identity.Security.slnx
 
-      - name: Build Monitoring
-        run: dotnet build SentinelApi.Monitoring/SentinelApi.Monitoring.slnx --no-restore --configuration Release
+      - name: Build
+        run: dotnet build SentinelLib.Identity.Security/SentinelLib.Identity.Security.slnx --no-restore --configuration Release
 
-      - name: Restore Identity
+      - name: Test
+        run: dotnet test SentinelLib.Identity.Security/SentinelLib.Identity.Security.slnx --no-restore --configuration Release
+
+  monitoring-sdk:
+    name: SentinelLib.Monitoring.SDK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Restore
+        run: dotnet restore SentinelLib.Monitoring.SDK/SentinelLib.Monitoring.SDK.slnx
+
+      - name: Build
+        run: dotnet build SentinelLib.Monitoring.SDK/SentinelLib.Monitoring.SDK.slnx --no-restore --configuration Release
+
+      - name: Test
+        run: dotnet test SentinelLib.Monitoring.SDK/SentinelLib.Monitoring.SDK.slnx --no-restore --configuration Release
+
+  identity-api:
+    name: SentinelApi.Identity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Restore
         run: dotnet restore SentinelApi.Identity/SentinelApi.Identity.slnx
 
-      - name: Build Identity
+      - name: Build
         run: dotnet build SentinelApi.Identity/SentinelApi.Identity.slnx --no-restore --configuration Release
 
-      - name: Test Identity
+      - name: Test
         run: dotnet test SentinelApi.Identity/SentinelApi.Identity.slnx --no-restore --configuration Release
+
+  monitoring-api:
+    name: SentinelApi.Monitoring
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Restore
+        run: dotnet restore SentinelApi.Monitoring/SentinelApi.Monitoring.slnx
+
+      - name: Build
+        run: dotnet build SentinelApi.Monitoring/SentinelApi.Monitoring.slnx --no-restore --configuration Release
+
+  docker-build:
+    name: Docker build
+    runs-on: ubuntu-latest
+    needs: [identity-security, monitoring-sdk, identity-api, monitoring-api]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Docker build
         run: docker compose build

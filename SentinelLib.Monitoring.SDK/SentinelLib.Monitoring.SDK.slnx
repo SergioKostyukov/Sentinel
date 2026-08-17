@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/docs/">
+    <File Path="docs/api-reference.md" />
+    <File Path="docs/authorization.md" />
+    <File Path="docs/configuration.md" />
+    <File Path="docs/custom-checks.md" />
+    <File Path="docs/examples.md" />
+    <File Path="docs/publishing.md" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="SentinelLib.Monitoring.SDK/SentinelLib.Monitoring.SDK.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="SentinelLib.Monitoring.SDK.Tests/SentinelLib.Monitoring.SDK.Tests.csproj" />
+  </Folder>
+</Solution>
