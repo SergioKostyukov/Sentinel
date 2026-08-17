@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/docs/">
+    <File Path="README.md" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="SentinelLib.Identity.Security/SentinelLib.Identity.Security.csproj" />
   </Folder>

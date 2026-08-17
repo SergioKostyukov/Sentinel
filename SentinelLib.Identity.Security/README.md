@@ -18,7 +18,7 @@
 
 | Document | Description |
 | --- | --- |
-| [Project README](../../README.md) | README (архітектура і повна документація проекту) | 
+| [Project README](../README.md) | README (архітектура і повна документація проекту) | 
 
 ## How To Use
 

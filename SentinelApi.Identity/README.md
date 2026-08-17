@@ -12,14 +12,14 @@
 - керування юзерами: список (`GET /api/users`), створення (`POST /api/users`);
 - публікацію метаданих для валідації токенів іншими сервісами (`/.well-known/openid-configuration`, `/.well-known/jwks.json`).
 
-Валідацію токенів на боці інших сервісів виконує бібліотека [`SentinelLib.Identity.Security`](../SentinelLib.Identity.Security/SentinelLib.Identity.Security/README.md).
+Валідацію токенів на боці інших сервісів виконує бібліотека [`SentinelLib.Identity.Security`](../SentinelLib.Identity.Security/README.md).
 
 ### Related Documentation
 
 | Document | Description |
 | --- | --- |
 | [Project README](../README.md) | Архітектура і повна документація проєкту |
-| [SentinelLib.Identity.Security](../SentinelLib.Identity.Security/SentinelLib.Identity.Security/README.md) | Бібліотека валідації токенів для інших сервісів |
+| [SentinelLib.Identity.Security](../SentinelLib.Identity.Security/README.md) | Бібліотека валідації токенів для інших сервісів |
 
 ---
 
