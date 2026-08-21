@@ -9,7 +9,7 @@ internal static class SwaggerExtensions
     {
         services.AddSwaggerGen(options =>
         {
-            // Add security definition for JWT Bearer token
+            // Додаємо визначення авторизації через JWT Bearer токен
             options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
             {
                 Name = "Authorization",
@@ -20,7 +20,7 @@ internal static class SwaggerExtensions
                 Description = "Please enter token.",
             });
 
-            // Add security requirement for JWT Bearer token
+            // Додаємо вимогу авторизації через JWT Bearer токен
             options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
             {
                 [new OpenApiSecuritySchemeReference("Bearer", document)] = []

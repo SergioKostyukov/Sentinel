@@ -1,5 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    
+
+    <ItemGroup>
+        <PackageReference Include="MailKit" />
+        <PackageReference Include="Microsoft.Extensions.Http" />
+    </ItemGroup>
+
     <ItemGroup>
         <ProjectReference Include="..\SentinelApi.Monitoring.Application\SentinelApi.Monitoring.Application.csproj" />
     </ItemGroup>

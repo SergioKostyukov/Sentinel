@@ -11,6 +11,8 @@
 
     <ItemGroup>
         <ProjectReference Include="..\SentinelApi.Monitoring.Domain\SentinelApi.Monitoring.Domain.csproj" />
+        <ProjectReference Include="..\..\SentinelLib.Monitoring.SDK\SentinelLib.Monitoring.SDK\SentinelLib.Monitoring.SDK.csproj" />
+        <ProjectReference Include="..\..\SentinelLib.Identity.Security\SentinelLib.Identity.Security\SentinelLib.Identity.Security.csproj" />
     </ItemGroup>
 
 </Project>

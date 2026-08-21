@@ -8,8 +8,18 @@ services:
       - "8080:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__Monitoring=Server=sql-server;Database=SentinelMonitoring;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True
       - Jwt__Issuer=${JWT_ISSUER}
       - Jwt__Audience=${JWT_AUDIENCE}
+      - SentinelMonitoring__ApiKey=${SENTINEL_MONITORING_API_KEY}
+      - Smtp__Host=smtp4dev
+      - Smtp__Port=25
+      - Smtp__UserName=${SMTP_USERNAME}
+      - Smtp__Password=${SMTP_PASSWORD}
+      - Smtp__Email=sentinel@local.test
+    depends_on:
+      - sql-server
+      - smtp4dev
 
   identity:
     container_name: sentinel-identity
@@ -39,6 +49,13 @@ services:
       - "14330:1433"
     volumes:
       - sql-server-data:/var/opt/mssql
+
+  smtp4dev:
+    image: rnwood/smtp4dev:v3
+    container_name: sentinel-smtp4dev
+    ports:
+      - "5000:80"
+      - "2525:25"
 
 volumes:
   sql-server-data:

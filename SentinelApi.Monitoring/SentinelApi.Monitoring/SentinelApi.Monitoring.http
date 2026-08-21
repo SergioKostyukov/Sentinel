@@ -1,6 +1,0 @@
-@SentinelApi.Monitoring_HostAddress = http://localhost:5148
-
-GET {{SentinelApi.Monitoring_HostAddress}}/test/
-Accept: application/json
-
-###

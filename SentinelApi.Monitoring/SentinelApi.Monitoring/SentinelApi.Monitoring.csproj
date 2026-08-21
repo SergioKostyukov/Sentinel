@@ -7,6 +7,8 @@
 
     <ItemGroup>
         <PackageReference Include="Swashbuckle.AspNetCore" />
+        <PackageReference Include="FluentValidation" />
+        <PackageReference Include="FluentValidation.AspNetCore" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,11 +20,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Controllers\" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\..\SentinelLib.Identity.Security\SentinelLib.Identity.Security\SentinelLib.Identity.Security.csproj" />
         <ProjectReference Include="..\SentinelApi.Monitoring.Application\SentinelApi.Monitoring.Application.csproj" />
         <ProjectReference Include="..\SentinelApi.Monitoring.Infrastructure\SentinelApi.Monitoring.Infrastructure.csproj" />
         <ProjectReference Include="..\SentinelApi.Monitoring.Infrastructure.Data\SentinelApi.Monitoring.Infrastructure.Data.csproj" />
